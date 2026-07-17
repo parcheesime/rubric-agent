@@ -28,3 +28,7 @@ htmlcov/
 # Corpus cache (keep if generated)
 corpus/index/*.db
 corpus/index/*.sqlite
+
+# Collected docs
+collectors/manual_import/incoming/*
+!collectors/manual_import/incoming/.gitkeep

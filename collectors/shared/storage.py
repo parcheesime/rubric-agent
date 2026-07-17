@@ -1,6 +1,8 @@
 """Cloudflare R2 storage operations."""
 
+import json
 from pathlib import Path
+from typing import Any
 
 import boto3
 from botocore.client import BaseClient
@@ -77,6 +79,60 @@ def upload_file(
         raise RuntimeError(
             f"Could not upload {file_path} to "
             f"r2://{config.bucket_name}/{object_key}"
+        ) from error
+
+    return object_key
+
+def object_exists(object_key: str) -> bool:
+    """Return True when an object already exists in R2."""
+
+    config = get_r2_config()
+    client = get_r2_client()
+
+    try:
+        client.head_object(
+            Bucket=config.bucket_name,
+            Key=object_key,
+        )
+        return True
+    except ClientError as error:
+        status_code = error.response.get("ResponseMetadata", {}).get(
+            "HTTPStatusCode"
+        )
+
+        if status_code == 404:
+            return False
+
+        raise RuntimeError(
+            f"Could not check R2 object: {object_key}"
+        ) from error
+
+
+def upload_json(
+    data: dict[str, Any],
+    object_key: str,
+) -> str:
+    """Serialize a dictionary and upload it to R2 as JSON."""
+
+    config = get_r2_config()
+    client = get_r2_client()
+
+    body = json.dumps(
+        data,
+        indent=2,
+        ensure_ascii=False,
+    ).encode("utf-8")
+
+    try:
+        client.put_object(
+            Bucket=config.bucket_name,
+            Key=object_key,
+            Body=body,
+            ContentType="application/json",
+        )
+    except ClientError as error:
+        raise RuntimeError(
+            f"Could not upload JSON to R2: {object_key}"
         ) from error
 
     return object_key
