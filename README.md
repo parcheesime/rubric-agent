@@ -1,4 +1,3 @@
-cat > README.md << 'EOF'
 # Rubric Agent
 
 > Understanding assessment rubrics through structured research, normalization, and machine-readable representation.
