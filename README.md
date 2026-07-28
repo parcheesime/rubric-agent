@@ -93,3 +93,18 @@ collectors/     Resource collection utilities
 schemas/        JSON schema definitions
 scripts/        Collection and analysis scripts
 tests/          Test fixtures and validation
+
+## Project Documentation
+
+The following documents define the architecture, governance, and long-term direction of Rubric Agent.
+
+| Document | Purpose |
+|----------|---------|
+| `ARCHITECTURE.md` | High-level overview of the system, major components, and how educational documents move through the platform. |
+| `DATA_POLICY.md` | Defines how educational materials are collected, processed, stored, attributed, and governed throughout their lifecycle. |
+| `INGESTION_PIPELINE.md` | Describes the shared pipeline that transforms educational documents into human-readable and machine-readable representations. |
+| `SOURCE_POLICY.md` | Defines which educational sources may be collected and the ethical and legal principles governing collection. |
+| `TAXONOMY.md` | Documents the educational classification system, relationships, tags, and metadata used throughout the project. |
+| `COLLECTOR_GUIDELINES.md` *(planned)* | Standards for implementing new document collectors consistently with the project architecture. |
+| `LICENSE_GUIDE.md` *(planned)* | Explains the relationship between the Apache 2.0 project license and the licenses governing collected educational materials. |
+| `ROADMAP.md` | Describes planned features, milestones, and long-term project direction. |
