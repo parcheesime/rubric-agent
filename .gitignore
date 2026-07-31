@@ -1,6 +1,7 @@
 # Python
 __pycache__/
 *.py[cod]
+*$py.class
 *.egg-info/
 .venv/
 venv/
@@ -21,7 +22,6 @@ Thumbs.db
 .ipynb_checkpoints/
 
 # Test artifacts
-.pytest_cache/
 .coverage
 htmlcov/
 
