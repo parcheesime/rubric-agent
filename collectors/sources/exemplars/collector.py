@@ -14,7 +14,7 @@ from collectors.sources.exemplars.search import (
     RubricCandidate,
     discover_all_rubrics,
 )
-from collectors.shared.ingest import ingest_rubric
+from collectors.shared.ingest import ingest_resource
 
 
 DOWNLOAD_TIMEOUT = 60
@@ -107,12 +107,13 @@ def ingest_candidate(
     try:
         print(f"Temporary download: {temp_path}")
         print(f"Temporary size: {temp_path.stat().st_size} bytes")
-        print("Calling ingest_rubric...")
+        print("Calling ingest_resource...")
 
-        result = ingest_rubric(
+        result = ingest_resource(
             temp_path,
             source_type="exemplars",
             source_url=candidate.source_url,
+            resource_type="rubric",
             additional_metadata={
                 "title": candidate.title,
                 "collection": candidate.subject,
@@ -123,7 +124,7 @@ def ingest_candidate(
             },
         )
 
-        print("ingest_rubric returned:", result)
+        print("ingest_resource returned:", result)
         return result
     finally:
         temp_path.unlink(missing_ok=True)

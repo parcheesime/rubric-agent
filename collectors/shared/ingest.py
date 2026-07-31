@@ -1,4 +1,4 @@
-"""Shared document-ingestion workflow."""
+"""Shared educational-resource ingestion workflow."""
 
 from datetime import datetime, timezone
 import mimetypes
@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Any
 
 from collectors.shared.checksum import calculate_sha256
-from collectors.shared.ids import create_rubric_id
+from collectors.shared.ids import create_resource_id
 from collectors.shared.storage import (
     object_exists,
     upload_file,
@@ -14,31 +14,33 @@ from collectors.shared.storage import (
 )
 
 
-def ingest_rubric(
+def ingest_resource(
     file_path: str | Path,
     *,
     source_type: str,
     source_url: str | None = None,
+    resource_type: str | None = None,
     additional_metadata: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     """
-    Add one rubric document to the R2 corpus.
+    Add one educational resource to the corpus.
 
-    Returns metadata describing whether the document was uploaded
+    Return metadata describing whether the resource was uploaded
     or already existed.
     """
 
     path = Path(file_path)
 
     if not path.is_file():
-        raise FileNotFoundError(f"Rubric file does not exist: {path}")
+        raise FileNotFoundError(f"Resource file does not exist: {path}")
 
     checksum = calculate_sha256(path)
-    rubric_id = create_rubric_id(checksum)
+
+    resource_id = create_resource_id(checksum)
 
     extension = path.suffix.lower() or ".bin"
-    raw_object_key = f"raw/{source_type}/{rubric_id}{extension}"
-    metadata_object_key = f"metadata/{rubric_id}.json"
+    raw_object_key = f"raw/{source_type}/{resource_id}{extension}"
+    metadata_object_key = f"metadata/{resource_id}.json"
 
     already_exists = object_exists(raw_object_key)
 
@@ -53,7 +55,8 @@ def ingest_rubric(
         )
 
     metadata: dict[str, Any] = {
-        "rubric_id": rubric_id,
+        "resource_id": resource_id,
+        "resource_type": resource_type,
         "sha256": checksum,
         "original_filename": path.name,
         "file_extension": extension,

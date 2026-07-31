@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-from collectors.shared.ingest import ingest_rubric
+from collectors.shared.ingest import ingest_resource
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -54,7 +54,7 @@ def main() -> None:
 
     for file_path in files:
         try:
-            result = ingest_rubric(
+            result = ingest_resource(
                 file_path,
                 source_type="manual_import",
             )
