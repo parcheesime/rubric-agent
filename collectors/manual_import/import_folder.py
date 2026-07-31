@@ -5,7 +5,8 @@ from pathlib import Path
 from collectors.shared.ingest import ingest_rubric
 
 
-INCOMING_DIRECTORY = Path("collectors/manual_import/incoming")
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+INCOMING_DIRECTORY = PROJECT_ROOT / "incoming" / "manual"
 
 SUPPORTED_EXTENSIONS = {
     ".pdf",
