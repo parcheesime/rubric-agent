@@ -9,7 +9,7 @@ from typing import Any
 
 import requests
 
-from collectors.exemplars.search import (
+from collectors.sources.exemplars.search import (
     DEFAULT_HEADERS,
     RubricCandidate,
     discover_all_rubrics,

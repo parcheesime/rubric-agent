@@ -1,4 +1,4 @@
-"""Import rubric files from the manual-import incoming directory."""
+"""Import educational resource files from the manual incoming directory."""
 
 from pathlib import Path
 
@@ -23,8 +23,8 @@ SUPPORTED_EXTENSIONS = {
 }
 
 
-def find_rubric_files(directory: Path) -> list[Path]:
-    """Return supported rubric files in a directory."""
+def find_supported_files(directory: Path) -> list[Path]:
+    """Return supported files in a directory."""
 
     if not directory.exists():
         raise FileNotFoundError(
@@ -42,10 +42,10 @@ def find_rubric_files(directory: Path) -> list[Path]:
 def main() -> None:
     """Upload all supported files from the incoming directory."""
 
-    files = find_rubric_files(INCOMING_DIRECTORY)
+    files = find_supported_files(INCOMING_DIRECTORY)
 
     if not files:
-        print(f"No rubric files found in {INCOMING_DIRECTORY}")
+        print(f"No supported files found in {INCOMING_DIRECTORY}")
         return
 
     uploaded = 0
