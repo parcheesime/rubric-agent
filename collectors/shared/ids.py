@@ -7,4 +7,4 @@ def create_resource_id(checksum: str) -> str:
     if len(checksum) != 64:
         raise ValueError("Expected a 64-character SHA-256 checksum")
 
-    return f"rubric_{checksum[:16]}"
+    return f"resource_{checksum[:16]}"
