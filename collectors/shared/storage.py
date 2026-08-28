@@ -136,3 +136,40 @@ def upload_json(
         ) from error
 
     return object_key
+
+
+def list_object_keys(prefix: str = "") -> list[str]:
+    """Return object keys stored in R2 under an optional prefix."""
+
+    config = get_r2_config()
+    client = get_r2_client()
+
+    object_keys: list[str] = []
+    continuation_token = None
+
+    try:
+        while True:
+            request = {
+                "Bucket": config.bucket_name,
+                "Prefix": prefix,
+            }
+
+            if continuation_token:
+                request["ContinuationToken"] = continuation_token
+
+            response = client.list_objects_v2(**request)
+
+            for item in response.get("Contents", []):
+                object_keys.append(item["Key"])
+
+            if not response.get("IsTruncated"):
+                break
+
+            continuation_token = response.get("NextContinuationToken")
+
+    except ClientError as error:
+        raise RuntimeError(
+            f"Could not list objects in R2 bucket: {config.bucket_name}"
+        ) from error
+
+    return object_keys
