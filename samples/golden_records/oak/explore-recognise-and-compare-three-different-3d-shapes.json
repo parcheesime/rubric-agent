@@ -1,0 +1,65 @@
+{
+  "record_id": "ra_lesson_oak_explore-recognise-and-compare-three-different-3d-shapes",
+  "level": 1,
+  "record_type": "lesson",
+  "source": {
+    "name": "oak",
+    "source_id": "explore-recognise-and-compare-three-different-3d-shapes",
+    "source_url": "https://www.thenational.academy/teachers/lessons/explore-recognise-and-compare-three-different-3d-shapes",
+    "canonical_url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks1/units/recognise-compose-decompose-and-manipulate-2d-and-3d-shapes/lessons/explore-recognise-and-compare-three-different-3d-shapes"
+  },
+  "identity": {
+    "title": "Explore, recognise and compare three different 3D shapes",
+    "subject": "Maths",
+    "key_stage": "Key Stage 1",
+    "unit_title": "Recognise, compose, decompose and manipulate 2D and 3D shapes"
+  },
+  "learning": {
+    "keywords": [
+      {
+        "keyword": "Similar",
+        "description": "When one thing is like something else."
+      },
+      {
+        "keyword": "Cone",
+        "description": "A 3D shape with one vertex, one circular face and one curved surface."
+      },
+      {
+        "keyword": "Sphere",
+        "description": "A 3D shape with one curved surface."
+      },
+      {
+        "keyword": "Cylinder",
+        "description": "A 3D shape with two circular faces and one curved surface."
+      }
+    ],
+    "key_learning_points": [
+      {
+        "keyLearningPoint": "Recognise objects that are similar shapes."
+      },
+      {
+        "keyLearningPoint": "3D shapes have 3 dimensions and are not flat."
+      },
+      {
+        "keyLearningPoint": "A sphere is shaped like a ball."
+      },
+      {
+        "keyLearningPoint": "A cylinder has 2 flat circle faces."
+      },
+      {
+        "keyLearningPoint": "A cone has 1 vertex and 1 flat circle face."
+      }
+    ],
+    "pupil_lesson_outcome": "I can recognise, name and compare three different 3D shapes.",
+    "misconceptions": [
+      {
+        "response": "Allow additional practice for children to name shapes throughout the day, particularly those that are familiar within their environment.",
+        "misconception": "Children might mix up words that sound alike e.g. similar and cylinder."
+      }
+    ]
+  },
+  "availability": {
+    "downloads_available": true,
+    "restricted": null
+  }
+}

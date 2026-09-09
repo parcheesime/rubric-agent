@@ -1,0 +1,55 @@
+{
+  "record_id": "ra_lesson_oak_draw-polygons-specified-by-coordinates-in-the-first-quadrant",
+  "level": 1,
+  "record_type": "lesson",
+  "source": {
+    "name": "oak",
+    "source_id": "draw-polygons-specified-by-coordinates-in-the-first-quadrant",
+    "source_url": "https://www.thenational.academy/teachers/lessons/draw-polygons-specified-by-coordinates-in-the-first-quadrant",
+    "canonical_url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks2/units/coordinates/lessons/draw-polygons-specified-by-coordinates-in-the-first-quadrant"
+  },
+  "identity": {
+    "title": "Draw polygons specified by coordinates in the first quadrant",
+    "subject": "Maths",
+    "key_stage": "Key Stage 2",
+    "unit_title": "Coordinates"
+  },
+  "learning": {
+    "keywords": [
+      {
+        "keyword": "Polygon",
+        "description": "A polygon is a 2D shape made up of three or more straight lines."
+      },
+      {
+        "keyword": "Vertex / vertices",
+        "description": "A vertex is the point where two lines meet. The plural is vertices."
+      },
+      {
+        "keyword": "Coordinate",
+        "description": "Coordinates are a set of values that show an exact position."
+      }
+    ],
+    "key_learning_points": [
+      {
+        "keyLearningPoint": "The first digit in the coordinate gives the horizontal distance from the origin along the x-axis."
+      },
+      {
+        "keyLearningPoint": "The second digit in the coordinate gives the vertical distance from the origin along the y-axis."
+      },
+      {
+        "keyLearningPoint": "Use a ruler to join the points you have plotted to form a polygon."
+      }
+    ],
+    "pupil_lesson_outcome": "I can draw polygons specified by coordinates in the first quadrant.",
+    "misconceptions": [
+      {
+        "response": "Reinforce that the x-coordinate comes first by using mnemonics such as \"X before Y, along the ground before you fly.\" Practice plotting a few points together as a class to build this habit.",
+        "misconception": "Pupils may mistakenly plot the y-coordinate (vertical distance) first, then the x-coordinate (horizontal distance), leading to incorrect point placement."
+      }
+    ]
+  },
+  "availability": {
+    "downloads_available": true,
+    "restricted": null
+  }
+}

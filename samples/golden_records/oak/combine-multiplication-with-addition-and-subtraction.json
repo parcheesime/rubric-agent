@@ -1,0 +1,62 @@
+{
+  "record_id": "ra_lesson_oak_combine-multiplication-with-addition-and-subtraction",
+  "level": 1,
+  "record_type": "lesson",
+  "source": {
+    "name": "oak",
+    "source_id": "combine-multiplication-with-addition-and-subtraction",
+    "source_url": "https://www.thenational.academy/teachers/lessons/combine-multiplication-with-addition-and-subtraction",
+    "canonical_url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks2/units/order-of-operations/lessons/combine-multiplication-with-addition-and-subtraction"
+  },
+  "identity": {
+    "title": "Combine multiplication with addition and subtraction",
+    "subject": "Maths",
+    "key_stage": "Key Stage 2",
+    "unit_title": "Order of operations"
+  },
+  "learning": {
+    "keywords": [
+      {
+        "keyword": "Efficient",
+        "description": "Working efficiently means finding a way to solve a problem quickly whilst also maintaining accuracy."
+      },
+      {
+        "keyword": "Equation",
+        "description": "An equation is used to show that one number, calculation or expression is equal to another."
+      },
+      {
+        "keyword": "Brackets",
+        "description": "Brackets are symbols used in pairs to group things together."
+      },
+      {
+        "keyword": "Order of operations",
+        "description": "The order of operations is a set of rules that tell you which operations have priority over others in an equation."
+      }
+    ],
+    "key_learning_points": [
+      {
+        "keyLearningPoint": "Multiplication can be combined with addition and subtraction."
+      },
+      {
+        "keyLearningPoint": "When there are no brackets, the multiplication is completed first."
+      },
+      {
+        "keyLearningPoint": "Where there are brackets, the calculation within the brackets is completed first."
+      },
+      {
+        "keyLearningPoint": "The order of operations is a set of rules that tells you the order in which you need to solve a written a equation."
+      }
+    ],
+    "pupil_lesson_outcome": "I can explain which order to complete the multiplication and addition or subtraction elements of a problem, and I know how to write this as an equation.",
+    "misconceptions": [
+      {
+        "response": "Allow plenty of opportunities for children to practise solving equations that cannot be solved working from left to right. You could highlight the operation symbols to draw children's attention to these before they begin to solve them.",
+        "misconception": "Children will solve an equation by working from left to right and forget that multiplication needs to be completed before addition or subtraction."
+      }
+    ]
+  },
+  "availability": {
+    "downloads_available": true,
+    "restricted": null
+  }
+}

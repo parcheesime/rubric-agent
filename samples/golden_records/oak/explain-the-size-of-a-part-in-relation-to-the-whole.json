@@ -1,0 +1,63 @@
+{
+  "record_id": "ra_lesson_oak_explain-the-size-of-a-part-in-relation-to-the-whole",
+  "level": 1,
+  "record_type": "lesson",
+  "source": {
+    "name": "oak",
+    "source_id": "explain-the-size-of-a-part-in-relation-to-the-whole",
+    "source_url": "https://www.thenational.academy/teachers/lessons/explain-the-size-of-a-part-in-relation-to-the-whole",
+    "canonical_url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks2/units/unit-fractions-as-part-of-a-whole/lessons/explain-the-size-of-a-part-in-relation-to-the-whole"
+  },
+  "identity": {
+    "title": "Explain the size of a part in relation to the whole",
+    "subject": "Maths",
+    "key_stage": "Key Stage 2",
+    "unit_title": "Unit fractions as part of a whole"
+  },
+  "learning": {
+    "keywords": [
+      {
+        "keyword": "Whole",
+        "description": "The whole is all the parts or everything, the total amount."
+      },
+      {
+        "keyword": "Part",
+        "description": "A part is some of the whole."
+      },
+      {
+        "keyword": "Equal",
+        "description": "We say that two or more things are equal if they have the same quantity or value."
+      },
+      {
+        "keyword": "Unequal",
+        "description": "We say that two or more things are unequal if they do not have the same quantity or value."
+      },
+      {
+        "keyword": "Inequality",
+        "description": "Inequality occurs when things are not equal. We use different symbols to show this."
+      }
+    ],
+    "key_learning_points": [
+      {
+        "keyLearningPoint": "Parts of the same sized whole can be compared."
+      },
+      {
+        "keyLearningPoint": "A bigger or smaller part of the whole can be shown."
+      },
+      {
+        "keyLearningPoint": "Different parts of the same sized whole can be directly compared based on their size."
+      }
+    ],
+    "pupil_lesson_outcome": "I can explain the size of a part in relation to the whole.",
+    "misconceptions": [
+      {
+        "response": "Use the bottles example in the slides to overcome this. Have a range of different sized containers for water and demonstrate the concept practically.",
+        "misconception": "The part changes size when the whole changes."
+      }
+    ]
+  },
+  "availability": {
+    "downloads_available": true,
+    "restricted": null
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "record_id": "ra_lesson_oak_solve-problems-involving-missing-coordinates",
+  "level": 1,
+  "record_type": "lesson",
+  "source": {
+    "name": "oak",
+    "source_id": "solve-problems-involving-missing-coordinates",
+    "source_url": "https://www.thenational.academy/teachers/lessons/solve-problems-involving-missing-coordinates",
+    "canonical_url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks2/units/area-perimeter-position-and-direction/lessons/solve-problems-involving-missing-coordinates"
+  },
+  "identity": {
+    "title": "Solve problems involving missing coordinates",
+    "subject": "Maths",
+    "key_stage": "Key Stage 2",
+    "unit_title": "Area, perimeter, position and direction"
+  },
+  "learning": {
+    "keywords": [
+      {
+        "keyword": "Congruent",
+        "description": "If two shapes are the same shape and size as each other, they are congruent."
+      },
+      {
+        "keyword": "Vertex / vertices",
+        "description": "A vertex is where two or more line segments meet. The plural is vertices."
+      }
+    ],
+    "key_learning_points": [
+      {
+        "keyLearningPoint": "Coordinate grids are not always presented with grid lines, and the axes are not always fully-labelled."
+      },
+      {
+        "keyLearningPoint": "When this is the case, it is essential to consider the known coordinates to work out missing coordinates."
+      },
+      {
+        "keyLearningPoint": "Missing coordinates sometimes appear on the same horizontal or vertical line as known coordinates, so they are the same."
+      },
+      {
+        "keyLearningPoint": "Sometimes we need to use known vertices to calculate unknown side lengths when working out missing coordinates."
+      }
+    ],
+    "pupil_lesson_outcome": "I can solve problems involving missing coordinates",
+    "misconceptions": [
+      {
+        "response": "Pupils not secure will need a resource within the lesson to support their calculations, such as a number line going from −10 to 10.",
+        "misconception": "Pupils need to have proficiency in bridging across zero with negative numbers, in the range of −10 to 10. Grid lines that might help to support such calculations are not given in this lesson."
+      }
+    ]
+  },
+  "availability": {
+    "downloads_available": true,
+    "restricted": null
+  }
+}

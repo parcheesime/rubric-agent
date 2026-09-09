@@ -1,0 +1,58 @@
+{
+  "record_id": "ra_lesson_oak_compose-tangram-images",
+  "level": 1,
+  "record_type": "lesson",
+  "source": {
+    "name": "oak",
+    "source_id": "compose-tangram-images",
+    "source_url": "https://www.thenational.academy/teachers/lessons/compose-tangram-images",
+    "canonical_url": "https://www.thenational.academy/teachers/programmes/maths-primary-ks1/units/recognise-compose-decompose-and-manipulate-2d-and-3d-shapes/lessons/compose-tangram-images"
+  },
+  "identity": {
+    "title": "Compose tangram images",
+    "subject": "Maths",
+    "key_stage": "Key Stage 1",
+    "unit_title": "Recognise, compose, decompose and manipulate 2D and 3D shapes"
+  },
+  "learning": {
+    "keywords": [
+      {
+        "keyword": "Tangram",
+        "description": "An ancient Chinese puzzle of seven pieces that make a square."
+      },
+      {
+        "keyword": "Triangle",
+        "description": "A 2D shape with three sides."
+      },
+      {
+        "keyword": "Square",
+        "description": "A 2D shape with four equal sides."
+      }
+    ],
+    "key_learning_points": [
+      {
+        "keyLearningPoint": "Individual tangram pieces can be discussed and compared."
+      },
+      {
+        "keyLearningPoint": "Some tangram pieces are the same size when laid directly on top of each other."
+      },
+      {
+        "keyLearningPoint": "Tangram pictures, using two or more pieces, can be created and described."
+      },
+      {
+        "keyLearningPoint": "Tangram pieces can be laid directly onto diagrams to create pictures"
+      }
+    ],
+    "pupil_lesson_outcome": "I can compare and discuss individual tangram pieces and make my own pictures.",
+    "misconceptions": [
+      {
+        "response": "Lay the tangram pieces on top of each other to physically explore and compare the size of each piece.",
+        "misconception": "Children might not notice that the two small and two large triangles are the same size."
+      }
+    ]
+  },
+  "availability": {
+    "downloads_available": true,
+    "restricted": null
+  }
+}
