@@ -17,6 +17,10 @@ CURRICULUM_TERMS = (
     "indicator",
     "competency",
     "rationale",
+    "learning_intention",
+    "success_criterion",
+    "expectation",
+    "framework",
 )
 
 CONTENT_TERMS = (
@@ -31,6 +35,11 @@ CONTENT_TERMS = (
     "theme",
     "fact",
     "phenomenon",
+    "key_idea",
+    "key_concept",
+    "key_vocabulary",
+    "disciplinary_knowledge",
+    "procedural_knowledge",
 )
 
 SEQUENCE_TERMS = (
@@ -64,21 +73,73 @@ ASSESSMENT_TERMS = (
 )
 
 RESOURCE_TERMS = (
-    "worksheet",
-    "slide",
-    "video",
-    "resource",
+    # Lesson and planning materials
+    "lesson",
+    "lesson_plan",
+    "unit_plan",
+    "syllabus",
+    "outline",
     "teacher_guide",
+    "teacher_manual",
+    "teacher_notes",
+    "student_guide",
+
+    # Worksheets, practice, and assessment support
+    "worksheet",
+    "practice_set",
+    "problem_set",
+    "question_bank",
+    "independent_work_packet",
     "answer_key",
-    "exemplar",
     "worked_example",
-    "anchor_chart",
-    "task_card",
-    "graphic_organizer",
+    "exemplar",
+
+    # Reference and reading materials
+    "textbook",
+    "student_book",
+    "workbook",
+    "reading",
     "reading_passage",
+    "article",
+    "book",
+    "ebook",
+    "reference_sheet",
+    "formula_sheet",
     "handout",
+
+    # Visual and classroom materials
+    "slide",
+    "anchor_chart",
+    "graphic_organizer",
+    "task_card",
+    "flash_card",
+    "poster",
+    "bulletin_board",
+    "word_wall",
+    "clip_art",
     "template",
     "stimulus",
+
+    # Activities and projects
+    "activity",
+    "game",
+    "center",
+    "project",
+    "laboratory",
+    "lab",
+    "simulation",
+    "interactive",
+
+    # Media and digital resources
+    "video",
+    "audio",
+    "podcast",
+    "song",
+    "notebook",
+    "printable",
+
+    # General
+    "resource",
 )
 
 INSTRUCTION_TERMS = (
@@ -99,6 +160,20 @@ INSTRUCTION_TERMS = (
     "closure",
     "check_for_understanding",
     "turn_and_talk",
+    "classroom_management",
+    "mini_lesson",
+    "discussion",
+    "collaboration",
+    "pair_work",
+    "group_work",
+    "whole_group",
+    "small_group",
+    "independent_work",
+    "think_pair_share",
+    "inquiry",
+    "investigation",
+    "exploration",
+    "demonstration",
 )
 
 SUPPORT_TERMS = (
@@ -115,6 +190,14 @@ SUPPORT_TERMS = (
     "sentence_frame",
     "word_bank",
     "acceleration",
+    "accessibility",
+    "assistive_technology",
+    "ell",
+    "esl",
+    "multilingual_learner",
+    "special_education",
+    "gifted",
+    "advanced_learner",
 )
 
 EDTECH_PLATFORM_TERMS = (
@@ -142,6 +225,66 @@ EDTECH_PLATFORM_TERMS = (
     "classkick",
     "blooket",
     "socrative",
+
+    # Additional platforms / sources
+    "google_workspace",
+    "google_sites",
+    "clever",
+    "wikipedia",
+    "coolmath_games",
+    "zoom",
+    "abcya",
+    "prodigy",
+    "google_meet",
+    "khan_academy",
+    "epic",
+    "jamboard",
+    "mit_app_inventor",
+    "weebly",
+    "gimkit",
+    "scholastic",
+    "brainpop",
+    "code_org",
+    "grammarly",
+    "classlink",
+    "ixl",
+    "phet",
+    "math_playground",
+)
+
+EDTECH_AI_TERMS = (
+    "artificial_intelligence",
+    "ai",
+    "generative_ai",
+    "ai_tutor",
+    "ai_assistant",
+    "chatbot",
+    "adaptive_learning",
+)
+
+EDTECH_DIGITAL_FORMAT_TERMS = (
+    "slide",
+    "slides",
+    "spreadsheet",
+    "google_doc",
+    "document",
+    "notebook",
+    "digital_notebook",
+    "presentation",
+    "interactive_presentation",
+    "digital_worksheet",
+    "digital_form",
+)
+
+EDTECH_DEVICE_TERMS = (
+    "laptop",
+    "chromebook",
+    "ipad",
+    "tablet",
+    "smart_board",
+    "interactive_whiteboard",
+    "calculator",
+    "graphing_calculator",
 )
 
 EDTECH_TYPE_TERMS = (
@@ -165,6 +308,9 @@ EDTECH_TYPE_TERMS = (
 EDTECH_TERMS = (
     *EDTECH_PLATFORM_TERMS,
     *EDTECH_TYPE_TERMS,
+    *EDTECH_DEVICE_TERMS,
+    *EDTECH_DIGITAL_FORMAT_TERMS,
+    *EDTECH_AI_TERMS,
 )
 
 # Global Registry for full verification loops
