@@ -32,3 +32,4 @@ corpus/index/*.sqlite
 # Collected docs
 collectors/manual_import/incoming/*
 !collectors/manual_import/incoming/.gitkeep
+*.docx
